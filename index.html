@@ -3,13 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>منصة النخبة التعليمية | تعلّم أذكى، متابعة أوضح، نتائج أفضل</title>
-  <meta name="description" content="منصة النخبة التعليمية تجمع الدروس والفيديوهات والاختبارات وتتبع التقدم والخطة اليومية في تجربة تعليمية حديثة للطالب وولي الأمر والمعلم." />
+
+  <title>منصة النخبة التعليمية | تطبيق تعليمي للدروس والاختبارات والمتابعة الذكية</title>
+  <meta name="description" content="منصة النخبة التعليمية هي منصة وتطبيق تعليمي حديث يوفّر الدروس والفيديوهات التعليمية والاختبارات وتتبع التقدم والخطة الدراسية اليومية والمتابعة الذكية للطلاب." />
+  <meta name="keywords" content="منصة النخبة التعليمية, النخبة التعليمية, النخبة, التعليم, منصة تعليمية, تطبيق تعليمي, تعليم إلكتروني, دروس, اختبارات, متابعة الطلاب, الخطة الدراسية, تعليم ذكي" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="أيهم فراس التقي" />
   <meta name="theme-color" content="#4A6CF7" />
-  <meta property="og:title" content="منصة النخبة التعليمية" />
-  <meta property="og:description" content="تجربة تعليمية منظمة وحديثة: دروس، اختبارات، تقارير، متابعة، إشعارات، وخطة دراسة يومية." />
-  <meta property="og:type" content="website" />
+
+  <link rel="canonical" href="https://alnokhbaeducation.com/" />
   <link rel="icon" type="image/jpeg" href="logo.jpg" />
+
+  <meta property="og:locale" content="ar_AR" />
+  <meta property="og:title" content="منصة النخبة التعليمية" />
+  <meta property="og:description" content="تجربة تعليمية حديثة تجمع الدروس والفيديوهات والاختبارات والمتابعة الذكية وتقارير الأداء في مكان واحد." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://alnokhbaeducation.com/" />
+  <meta property="og:site_name" content="منصة النخبة التعليمية" />
+  <meta property="og:image" content="https://alnokhbaeducation.com/logo.jpg" />
+  <meta property="og:image:alt" content="شعار منصة النخبة التعليمية" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="منصة النخبة التعليمية" />
+  <meta name="twitter:description" content="تطبيق ومنصة تعليمية للدروس والاختبارات والمتابعة الذكية والخطة الدراسية اليومية." />
+  <meta name="twitter:image" content="https://alnokhbaeducation.com/logo.jpg" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "منصة النخبة التعليمية",
+        "alternateName": ["النخبة التعليمية", "النخبة"],
+        "url": "https://alnokhbaeducation.com/",
+        "logo": "https://alnokhbaeducation.com/logo.jpg",
+        "description": "منصة تعليمية حديثة للدروس والفيديوهات التعليمية والاختبارات والمتابعة الذكية وتتبع التقدم والخطة اليومية.",
+        "inLanguage": "ar",
+        "keywords": [
+          "منصة النخبة التعليمية",
+          "النخبة التعليمية",
+          "النخبة",
+          "التعليم",
+          "منصة تعليمية",
+          "تطبيق تعليمي",
+          "تعليم إلكتروني",
+          "اختبارات",
+          "دروس"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "name": "منصة النخبة التعليمية",
+        "url": "https://alnokhbaeducation.com/",
+        "inLanguage": "ar",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://alnokhbaeducation.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
   <style>
     :root {
       --primary: #4A6CF7;
@@ -113,6 +169,10 @@
       display: flex;
       align-items: center;
       gap: 12px;
+    }
+
+    .download-desktop {
+      display: inline-flex;
     }
 
     .menu-btn {
@@ -847,6 +907,12 @@
       border: 1px solid var(--line);
     }
 
+    .mobile-actions {
+      display: grid;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
     @media (max-width: 1080px) {
       .hero-grid,
       .split,
@@ -861,6 +927,7 @@
 
     @media (max-width: 860px) {
       .nav-links,
+      .download-desktop,
       .nav-actions .btn-soft { display: none; }
       .menu-btn { display: inline-grid; place-items: center; }
       .hero { padding-top: 34px; }
@@ -908,12 +975,16 @@
       <nav class="nav" aria-label="التنقل الرئيسي">
         <a href="#home" class="brand" aria-label="العودة إلى الأعلى">
           <span class="brand-mark"><img src="logo.jpg" alt="شعار منصة النخبة التعليمية" /></span>
-          <span>
+          <span style="
+    font-size: 20px;
+    font-weight: 700;
+" >
             منصة النخبة التعليمية
           </span>
         </a>
 
         <div class="nav-links">
+          <a href="#about-platform">عن المنصة</a>
           <a href="#features">المزايا</a>
           <a href="#audiences">لمن صُممت</a>
           <a href="#workflow">طريقة العمل</a>
@@ -925,13 +996,13 @@
         </div>
 
         <div class="nav-actions">
-          <!-- <a class="btn btn-soft" href="#contact">اطلب نسخة تجريبية</a> -->
-          <a id="menuBtn" class="btn btn-primary" href="https://pub-e38172bdcd4147c8b03109bd570bbd51.r2.dev/app-release.apk">تنزيل التطبيق</a>
-          <!-- <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة"></button> -->
+          <a class="btn btn-primary download-desktop" href="https://pub-e38172bdcd4147c8b03109bd570bbd51.r2.dev/app-release.apk">تنزيل التطبيق</a>
+          <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة">☰</button>
         </div>
       </nav>
       <div class="mobile-nav" id="mobileNav">
         <div class="nav-links">
+          <a href="#about-platform">عن المنصة</a>
           <a href="#features">المزايا</a>
           <a href="#audiences">لمن صُممت</a>
           <a href="#workflow">طريقة العمل</a>
@@ -941,6 +1012,9 @@
           <a href="#faq">الأسئلة الشائعة</a>
           <a href="#contact">التواصل</a>
         </div>
+        <div class="mobile-actions">
+          <a class="btn btn-primary" href="https://pub-e38172bdcd4147c8b03109bd570bbd51.r2.dev/app-release.apk">تنزيل التطبيق</a>
+        </div>
       </div>
     </div>
   </header>
@@ -949,15 +1023,15 @@
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <span class="eyebrow">منصة تعليمية ذكية للطالب ووليّ الأمر والمعلّم</span>
-          <h1>كل ما يحتاجه الطالب في مكان واحد، بطريقة أوضح وأسرع وأكثر تنظيمًا</h1>
+          <span class="eyebrow">منصة النخبة التعليمية | منصة وتطبيق تعليمي للطالب ووليّ الأمر والمعلّم</span>
+          <h1>منصة النخبة التعليمية: تطبيق تعليمي حديث للدروس والاختبارات والمتابعة الذكية</h1>
           <p>
-            منصة النخبة التعليمية تقدّم تجربة تعلم رقمية حديثة تجمع بين الدروس المصوّرة والملفات التعليمية والاختبارات وتتبع التقدم والخطة اليومية والإشعارات الذكية،
-            مع دعم فعلي للطالب ووليّ الأمر والمعلّم داخل منظومة واحدة متكاملة.
+            منصة النخبة التعليمية هي منصة وتطبيق تعليمي حديث يقدّم الدروس المصوّرة والملفات التعليمية والاختبارات وتتبع التقدم والخطة الدراسية اليومية والإشعارات الذكية،
+            ليمنح الطالب تجربة تعليم إلكتروني منظمة وواضحة، ويمنح وليّ الأمر والمعلّم أدوات متابعة عملية داخل منظومة تعليمية واحدة متكاملة.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="YOUR_ANDROID_LINK">ابدأ الآن</a>
+            <a class="btn btn-primary" href="https://pub-e38172bdcd4147c8b03109bd570bbd51.r2.dev/app-release.apk">ابدأ الآن</a>
             <a class="btn btn-soft" href="#features">استكشف المزايا</a>
           </div>
 
@@ -1056,6 +1130,50 @@
             <b>أدوار متعددة</b>
             <span>تجربة مناسبة للطالب ووليّ الأمر والمعلّم مع أدوات متابعة لكل طرف.</span>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm" id="about-platform">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="section-tag">عن المنصة</div>
+            <h2>ما هي منصة النخبة التعليمية؟</h2>
+            <p>
+              منصة النخبة التعليمية هي منصة تعليمية عربية وتطبيق تعليمي صُمما لتقديم تجربة تعليم إلكتروني حديثة تجمع بين شرح الدروس،
+              الفيديوهات التعليمية، ملفات PDF، الاختبارات، تقارير الأداء، والخطة الدراسية اليومية في مكان واحد.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-3">
+          <article class="info-card">
+            <div class="icon primary">⌘</div>
+            <h3>منصة تعليمية متكاملة</h3>
+            <p>
+              النخبة التعليمية ليست صفحة معلومات فقط، بل منصة تعليمية متكاملة تساعد الطالب على الدراسة المنظمة،
+              وتساعد المعلّم على المتابعة، وتمنح وليّ الأمر رؤية أوضح لمستوى التقدّم والتحصيل.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="icon success">▶</div>
+            <h3>تطبيق تعليمي للاستخدام اليومي</h3>
+            <p>
+              التطبيق التعليمي يسهّل الوصول إلى الدروس والاختبارات والمهام اليومية والملفات التعليمية من الجوال،
+              مع تجربة استخدام عربية واضحة مناسبة للطلاب والمهتمين بالتعليم الرقمي الحديث.
+            </p>
+          </article>
+
+          <article class="info-card">
+            <div class="icon warning">◎</div>
+            <h3>تعليم إلكتروني مع متابعة ذكية</h3>
+            <p>
+              تعتمد منصة النخبة التعليمية على تتبع التقدّم والمهارات والفجوات التعليمية، بحيث يتحول التعليم الإلكتروني
+              من مجرد مشاهدة محتوى إلى متابعة عملية وقرارات دراسية أوضح وأكثر دقة.
+            </p>
+          </article>
         </div>
       </div>
     </section>
@@ -1321,7 +1439,7 @@
 
           <article class="teacher-card">
             <div class="teacher-photo">
-              <img src="logo.jpg" alt="صورة الأستاذة ريم الحسن" />
+              <img src="logo.jpg" alt="صورة الأستاذ محمود عامر" />
             </div>
             <div class="teacher-body">
               <span class="teacher-subject">الفيزياء و الكيمياء</span>
@@ -1332,7 +1450,7 @@
 
           <article class="teacher-card">
             <div class="teacher-photo">
-              <img src="feras.jpg"صورة الأستاذ سامر الخطيب" />
+              <img src="feras.jpg" alt="صورة الأستاذ فراس طنيش" />
             </div>
             <div class="teacher-body">
               <span class="teacher-subject">اللغة العربية</span>
@@ -1343,7 +1461,7 @@
 
           <article class="teacher-card">
             <div class="teacher-photo">
-              <img src="logo.jpg" alt="صورة الأستاذة نور علي" />
+              <img src="logo.jpg" alt="صورة الأستاذ ياسر جاويش" />
             </div>
             <div class="teacher-body">
               <span class="teacher-subject">اللغة الإنجليزية</span>
@@ -1353,7 +1471,7 @@
           </article>
           <article class="teacher-card">
             <div class="teacher-photo">
-              <img src="logo.jpg" alt="صورة الأستاذة نور علي" />
+              <img src="logo.jpg" alt="صورة الأستاذ محمد السعدي" />
             </div>
             <div class="teacher-body">
               <span class="teacher-subject">التربية الدينية الإسلامية</span>
@@ -1363,7 +1481,7 @@
           </article>
           <article class="teacher-card">
             <div class="teacher-photo">
-              <img src="logo.jpg" alt="صورة الأستاذة نور علي" />
+              <img src="issa.jpg" alt="صورة الأستاذ عيسى الدندن" />
             </div>
             <div class="teacher-body">
               <span class="teacher-subject">الإجتماعيات</span>
@@ -1373,7 +1491,7 @@
           </article>
           <article class="teacher-card">
             <div class="teacher-photo">
-              <img src="rama.jpg" alt="صورة الأستاذة نور علي" />
+              <img src="rama.jpg" alt="صورة الأستاذة رامه مطر" />
             </div>
             <div class="teacher-body">
               <span class="teacher-subject">اللغة الفرنسية</span>
@@ -1383,7 +1501,7 @@
           </article>
           <article class="teacher-card">
             <div class="teacher-photo">
-              <img src="reem.jpg" alt="صورة الأستاذة نور علي" />
+              <img src="reem.jpg" alt="صورة الأستاذة ريم قيسية" />
             </div>
             <div class="teacher-body">
               <span class="teacher-subject">علم الأحياء</span>
@@ -1546,6 +1664,31 @@
             </summary>
             <div class="faq-a">المنصة تتضمن دعمًا للتخزين المؤقت وبعض سيناريوهات العمل دون اتصال، إضافة إلى إمكانية تنزيل بعض الدروس للوصول إليها لاحقًا.</div>
           </details>
+
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">ما هي منصة النخبة التعليمية؟</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-a">منصة النخبة التعليمية هي منصة وتطبيق تعليمي يوفّران الدروس المصوّرة والملفات التعليمية والاختبارات وتقارير التقدّم والخطة الدراسية اليومية داخل تجربة تعليم إلكتروني واحدة.</div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">هل النخبة التعليمية منصة أم تطبيق تعليمي؟</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-a">هي الاثنان معًا: منصة تعليمية لعرض المحتوى والمتابعة، وتطبيق تعليمي يسهّل على الطالب ووليّ الأمر والمعلّم الوصول اليومي إلى الدروس والاختبارات والتقارير.</div>
+          </details>
+
+          <details class="faq-item">
+            <summary>
+              <span class="faq-q">هل تدعم منصة النخبة التعليمية التعليم الإلكتروني؟</span>
+              <span class="faq-icon">+</span>
+            </summary>
+            <div class="faq-a">نعم. المنصة مبنية لتقديم تعليم إلكتروني منظم يشمل مشاهدة الدروس، استخدام الملفات التعليمية، حل الاختبارات، متابعة الأداء، وتنظيم الخطة الدراسية من الجوال.</div>
+          </details>
+
         </div>
       </div>
     </section>
@@ -1564,9 +1707,17 @@
   <script>
     const menuBtn = document.getElementById('menuBtn');
     const mobileNav = document.getElementById('mobileNav');
-    if (menuBtn) {
-      menuBtn.addEventListener('click', () => {
+
+    if (menuBtn && mobileNav) {
+      menuBtn.addEventListener('click', (event) => {
+        event.stopPropagation();
         mobileNav.classList.toggle('open');
+      });
+
+      document.addEventListener('click', (event) => {
+        if (!mobileNav.contains(event.target) && !menuBtn.contains(event.target)) {
+          mobileNav.classList.remove('open');
+        }
       });
     }
 
@@ -1611,7 +1762,6 @@
 
     counters.forEach(counter => observer.observe(counter));
 
-    const sections = document.querySelectorAll('main section[id], footer[id], div[id]');
     const navLinks = document.querySelectorAll('.nav-links a');
 
     window.addEventListener('scroll', () => {
